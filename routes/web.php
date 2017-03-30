@@ -11,6 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'SignController@home');
+Route::get('/submit', 'SignController@getSign');
+
+/**
+* Log viewer
+* (only accessible locally)
+*/
+if(config('app.env') == 'local') {
+    Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
+}
