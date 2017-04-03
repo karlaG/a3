@@ -51,9 +51,9 @@
   @endif
 
   @if ($gender == 'female')
-    <img src="female-gender-sign.jpg" alt="female gender sign">
+    <img style="width:100px;height:100px" src="female-gender-sign.jpg" alt="female gender sign">
   @elseif ($gender == 'male' )
-    <img src="male-gender-sign.jpg" alt="male gender sign">
+    <img style="width:100px;height:100px" src="male-gender-sign.jpg" alt="male gender sign">
   @endif
 
   {{ $sign }}

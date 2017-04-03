@@ -8,9 +8,9 @@ class SignController extends Controller
 {
     public function home() {
       return view('home')->with([
-        'day' => null,
-        'month' => null,
         'gender' => null,
+        'month' => null,
+        'day' => null,
         'sign' => null,
         'summary' => null
       ]);
@@ -59,9 +59,9 @@ class SignController extends Controller
         }
 
         return view('home')->with([
-          'day' => $day,
-          'month' => $month,
           'gender' => $gender,
+          'month' => $month,
+          'day' => $day,
           'sign' => $sign,
           'summary' => $signs[$sign]['summary']
         ]);
