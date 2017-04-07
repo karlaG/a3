@@ -1,6 +1,8 @@
 @extends('layouts.master')
 
 @section('content')
+  <h1>What's my sign?</h1>
+  
   <form method="GET" action="/submit">
     <div class="form-group">
       <p>*I am</p>
@@ -30,8 +32,8 @@
     </div>
 
     <div class="form-group">
-      <label for="day" id="day">*Day</label>
-        <input type="number" name="day" min="1" max="31" value="{{ $day or ''}}" required>
+      <label for="day">*Day</label>
+        <input type="number" name="day" id="day" min="1" max="31" value="{{ $day or ''}}" required>
     </div>
 
     <div class="form-group">

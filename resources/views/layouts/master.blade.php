@@ -12,7 +12,6 @@
 
     <body>
         <div class="container">
-          <h1>What's my sign?</h1>
           <section>@yield('content')</section>
         </div>
     </body>
