@@ -12,7 +12,7 @@
 
     <div class="form-group">
       <label for="month">*Month</label>
-        <select name="month" required>
+        <select name="month" id="month" required>
           <option value="">...</option>
           <option value="1" {{ ($month=='1') ? 'SELECTED': '' }}>Jan</option>
           <option value="2" {{ ($month=='2') ? 'SELECTED': '' }}>Feb</option>
@@ -30,7 +30,7 @@
     </div>
 
     <div class="form-group">
-      <label for="day">*Day</label>
+      <label for="day" id="day">*Day</label>
         <input type="number" name="day" min="1" max="31" value="{{ $day or ''}}" required>
     </div>
 
